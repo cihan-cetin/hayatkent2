@@ -1,0 +1,56 @@
+@page {
+	size: A4 landscape;
+	margin: 0px;
+}
+
+@media print {
+	body {
+		margin: 0px;
+	}
+	.page {
+        margin: 0px;
+        width: 297mm;
+		height: 210mm;
+	}
+}
+
+table{
+    border: 1px solid black;
+    border-collapse: collapse;
+    margin: auto;
+}
+
+th, td {
+    padding: .15em .5em .15em .5em;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+caption{
+    margin-top: 1em;
+    font-weight: bold;
+}
+
+.page{
+    height:210mm;
+    width:297mm;
+    display: flex;
+    flex-direction: row;
+}
+
+.a5{
+    height: 100%;
+    width: 50%;
+    padding : 2em 1em 1em 1em;
+}
+
+.second-a5{
+    border-left: 1px dashed black;
+}
+
+h3, h4{
+    margin: 0em;
+    padding-top: .25em;
+    padding-bottom: .25em;
+    text-align: center;
+}

@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<link rel="stylesheet" href="./main.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+	<div class="container-fluid" style="padding-left: 3em;">
+
+		<form method="GET" action="print.html">
+			<!--  Baslangic ve Bitis Tarihleri  -->
+			<div class="container">
+				<h2>Hayatkent 2 Sitesi Aidat Makbuzu Hazırlama Sayfası</h2>
+				<div class="row">
+					<div class="col-4">
+						<label for="baslangic-tarihi" class="col-6 col-form-label"
+							data-date-format="dd/mm/yyyy">Başlangıç Tarihi</label>
+						<input type="date" class="form-control" name="baslangic_tarihi" id="baslangic-tarihi"
+							required="" oninvalid="this.setCustomValidity('Lütfen bu alanı boş bırakmayın')">
+					</div>
+					<div class="col-4">
+						<label for="bitis-tarihi" class="col-4 col-form-label">Bitiş Tarihi</label>
+						<input type="date" class="form-control" name="bitis_tarihi" id="bitis-tarihi" required=""
+							oninvalid="this.setCustomValidity('Lütfen bu alanı boş bırakmayın')">
+					</div>
+				</div>
+			</div>
+			<hr>
+
+			<!--  Site Giderleri  -->
+			<div class="container">
+				<h3>Site Giderleri</h3>
+				<div id="inputFormRow1" class="row">
+					<div class="col-5">
+						<input type="text" name="site_gider[]" class="form-control m-input" placeholder="Gider"
+							autocomplete="off" required="" oninput="setCustomValidity('')"
+							oninvalid="this.setCustomValidity('Lütfen bu alanı boş bırakmayın')">
+					</div>
+					<div class="col-3">
+						<input type="number" name="site_tutar[]" class="form-control m-input" placeholder="Tutar"
+							autocomplete="off" required="" oninput="setCustomValidity('')"
+							oninvalid="this.setCustomValidity('Lütfen bu alanı boş bırakmayın')">
+					</div>
+					<div class="col-1">
+						<button id="removeRow1" type="button" class="btn btn-danger">Sil</button>
+					</div>
+				</div>
+				<div id="newRow1"></div>
+				<button id="addRow1" type="button" class="btn btn-info">Ekle</button>
+			</div>
+			<hr>
+
+			<!--  A Blok Giderleri  -->
+			<div class="container">
+				<h3>A Blok Giderleri</h3>
+				<div id="inputFormRow2" class="row">
+					<div class="col-5">
+						<input type="text" name="a_blok_gider[]" class="form-control m-input" placeholder="Gider"
+							autocomplete="off" required="" oninput="setCustomValidity('')"
+							oninvalid="this.setCustomValidity('Lütfen bu alanı boş bırakmayın')">
+					</div>
+					<div class="col-3">
+						<input type="number" name="a_blok_tutar[]" class="form-control m-input" placeholder="Tutar"
+							autocomplete="off" required="" required="" oninput="setCustomValidity('')"
+							oninvalid="this.setCustomValidity('Lütfen bu alanı boş bırakmayın')">
+					</div>
+					<div class="col-1">
+						<button id="removeRow2" type="button" class="btn btn-danger">Sil</button>
+					</div>
+				</div>
+				<div id="newRow2"></div>
+				<button id="addRow2" type="button" class="btn btn-info">Ekle</button>
+			</div>
+			<hr>
+
+			<!--  B Blok Giderleri  -->
+			<div class="container">
+				<h3>B Blok Giderleri</h3>
+				<div id="inputFormRow3" class="row">
+					<div class="col-5">
+						<input type="text" name="b_blok_gider[]" class="form-control m-input" placeholder="Gider"
+							autocomplete="off" required="" oninput="setCustomValidity('')"
+							oninvalid="this.setCustomValidity('Lütfen bu alanı boş bırakmayın')">
+					</div>
+					<div class="col-3">
+						<input type="number" name="b_blok_tutar[]" class="form-control m-input" placeholder="Tutar"
+							autocomplete="off" required="" oninput="setCustomValidity('')"
+							oninvalid="this.setCustomValidity('Lütfen bu alanı boş bırakmayın')">
+					</div>
+					<div class="col-1">
+						<button id="removeRow3" type="button" class="btn btn-danger">Sil</button>
+					</div>
+				</div>
+				<div id="newRow3"></div>
+				<button id="addRow3" type="button" class="btn btn-info">Ekle</button>
+			</div>
+			<hr>
+
+			<!--  C Blok Giderleri  -->
+			<div class="container">
+				<h3>C Blok Giderleri</h3>
+				<div id="inputFormRow4" class="row">
+					<div class="col-5">
+						<input type="text" name="c_blok_gider[]" class="form-control m-input" placeholder="Gider"
+							autocomplete="off" required="" oninput="setCustomValidity('')"
+							oninvalid="this.setCustomValidity('Lütfen bu alanı boş bırakmayın')">
+					</div>
+					<div class="col-3">
+						<input type="number" name="c_blok_tutar[]" class="form-control m-input" placeholder="Tutar"
+							autocomplete="off" required="" oninput="setCustomValidity('')"
+							oninvalid="this.setCustomValidity('Lütfen bu alanı boş bırakmayın')">
+					</div>
+					<div class="col-1">
+						<button id="removeRow4" type="button" class="btn btn-danger">Sil</button>
+					</div>
+				</div>
+				<div id="newRow4"></div>
+				<button id="addRow4" type="button" class="btn btn-info">Ekle</button>
+			</div>
+			<hr>
+
+			<!--  D Blok Giderleri  -->
+			<div class="container">
+				<h3>D Blok Giderleri</h3>
+				<div id="inputFormRow5" class="row">
+					<div class="col-5">
+						<input type="text" name="d_blok_gider[]" class="form-control m-input" placeholder="Gider"
+							autocomplete="off" required="" oninput="setCustomValidity('')"
+							oninvalid="this.setCustomValidity('Lütfen bu alanı boş bırakmayın')">
+					</div>
+					<div class="col-3">
+						<input type="number" name="d_blok_tutar[]" class="form-control m-input" placeholder="Tutar"
+							autocomplete="off" required="" oninput="setCustomValidity('')"
+							oninvalid="this.setCustomValidity('Lütfen bu alanı boş bırakmayın')">
+					</div>
+					<div class="col-1">
+						<button id="removeRow5" type="button" class="btn btn-danger">Sil</button>
+					</div>
+				</div>
+				<div id="newRow5"></div>
+				<button id="addRow5" type="button" class="btn btn-info">Ekle</button>
+			</div>
+			<hr>
+
+			<!--  E Blok Giderleri  -->
+			<div class="container">
+				<h3>E Blok Giderleri</h3>
+				<div id="inputFormRow6" class="row">
+					<div class="col-5">
+						<input type="text" name="e_blok_gider[]" class="form-control m-input" placeholder="Gider"
+							autocomplete="off" required="" oninput="setCustomValidity('')"
+							oninvalid="this.setCustomValidity('Lütfen bu alanı boş bırakmayın')">
+					</div>
+					<div class="col-3">
+						<input type="number" name="e_blok_tutar[]" class="form-control m-input" placeholder="Tutar"
+							autocomplete="off" required="" oninput="setCustomValidity('')"
+							oninvalid="this.setCustomValidity('Lütfen bu alanı boş bırakmayın')">
+					</div>
+					<div class="col-1">
+						<button id="removeRow6" type="button" class="btn btn-danger">Sil</button>
+					</div>
+				</div>
+				<div id="newRow6"></div>
+				<button id="addRow6" type="button" class="btn btn-info">Ekle</button>
+			</div>
+			<hr>
+
+			<!--  F Blok Giderleri  -->
+			<div class="container">
+				<h3>F Blok Giderleri</h3>
+				<div id="inputFormRow7" class="row">
+					<div class="col-5">
+						<input type="text" name="f_blok_gider[]" class="form-control m-input" placeholder="Gider"
+							autocomplete="off" required="" oninput="setCustomValidity('')"
+							oninvalid="this.setCustomValidity('Lütfen bu alanı boş bırakmayın')">
+					</div>
+					<div class="col-3">
+						<input type="number" name="f_blok_tutar[]" class="form-control m-input" placeholder="Tutar"
+							autocomplete="off" required="" oninput="setCustomValidity('')"
+							oninvalid="this.setCustomValidity('Lütfen bu alanı boş bırakmayın')">
+					</div>
+					<div class="col-1">
+						<button id="removeRow7" type="button" class="btn btn-danger">Sil</button>
+					</div>
+				</div>
+				<div id="newRow7"></div>
+				<button id="addRow7" type="button" class="btn btn-info">Ekle</button>
+			</div>
+			<hr>
+
+			<!--  Dipnot  -->
+			<div class="container">
+				<h3>Dipnot</h3>
+				<div class="row">
+					<div class="col-9">
+						<input type="text" class="form-control" name="dipnot" id="dipnot"
+							value="Not: Lütfen aidatlarınızı ayın 18'inden önce ödeyiniz." placeholder="Not"
+							onblur="if (this.value == '') {this.value = 'Not: Lütfen aidatlarınızı ayın 18\'inden önce ödeyiniz.';}"
+							onfocus="if (this.value == 'Not: Lütfen aidatlarınızı ayın 18\'inden önce ödeyiniz.') {this.value = '';}">
+					</div>
+				</div>
+			</div>
+
+			<!--  Submit Button  -->
+			<div class="container">
+				<div class="row">
+					<div class="col-9 text-right">
+						<input type="submit" class="btn btn-success" value="Kaydet">
+					</div>
+				</div>
+			</div>
+
+		</form>
+	</div>
+
+	<script type="text/javascript" src="./index.js"></script>
+</body>
+
+</html>
