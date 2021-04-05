@@ -33,5 +33,5 @@ Uygulamanın web sayfasına **[buradan](https://cihan-cetin.github.io/hayatkent2
 
 ## !! UYARI !!
 
-Makbuzların bulunduğu sayfada bug olduğundan fazladan bir boş sayfa yazdırabilir. Bunu engellemek için yazdırma menüsündeki yazdırılacak sayfalar kısmını **```1-3```** şeklinde değiştirin.
+Makbuzların bulunduğu sayfada bug olduğundan fazladan bir boş sayfa yazdırabilir. Bunu engellemek için yazdırma menüsündeki yazdırılacak sayfalar kısmını **```1-6```** şeklinde değiştirin.
 
