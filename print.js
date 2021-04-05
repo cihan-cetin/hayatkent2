@@ -27,9 +27,11 @@ function createTable(giderler, tutarlar) {
     var siteSum = 0;
     var blokSum = 0;
 
-    //  Site Giderleri Tablosu
+    content += '<br>';
+
+    //  Site Giderleri
     content += '<table>';
-    content += '<caption>Site Giderleri</caption>';
+    content += '<tr><th colspan="3">Site Giderleri</th></tr>';
     content += '<tr><th>Gider</th><th>Tutar</th><th>Daire Başına</th></tr>';
     for (let i = 0; i < site_giderler.length; i++) {
         content += '<tr>';
@@ -45,11 +47,9 @@ function createTable(giderler, tutarlar) {
     content += '<td>' + siteSum.toFixed(0) + ' TL</td>';
     content += '<td>' + (siteSum / 258).toFixed(2) + ' TL</td>';
     content += '</tr>';
-    content += '</table>';
 
-    //  Blok Giderleri Tablosu
-    content += '<table>';
-    content += '<caption>Blok Giderleri</caption>';
+    //  Blok Giderleri
+    content += '<tr><th colspan="3">Blok Giderleri</th></tr>';
     content += '<tr><th>Gider</th><th>Tutar</th><th>Daire Başına</th></tr>';
     for (let i = 0; i < giderler.length; i++) {
         content += '<tr>';
@@ -65,15 +65,32 @@ function createTable(giderler, tutarlar) {
     content += '<td>' + blokSum.toFixed(0) + ' TL</td>';
     content += '<td>' + (blokSum / 43).toFixed(2) + ' TL</td>';
     content += '</tr>';
+    
+    //Odenecek Tutar
+
+    var toplam = siteSum / 258 + blokSum / 43;
+    var odenecekTutar = (parseInt(toplam / 5) + 1) * 5;
+    var yuvarlama = odenecekTutar - toplam;
+
+    content += '<tr><th colspan="3">Ödenecek Tutar</th></tr>';
+    content += '<tr>';
+    content += '<td colspan="2">Daire Başına Düşen Toplam Tutar</td>';
+    content += '<td>' + toplam.toFixed(2) + ' TL</td>';
+    content += '</tr>';
+
+    content += '<tr>';
+    content += '<td colspan="2">Yuvarlama</td>';
+    content += '<td>' + yuvarlama.toFixed(2) + ' TL</td>';
+    content += '</tr>';
+
+    content += '<tr>';
+    content += '<td colspan="2">Ödenecek Tutar</td>';
+    content += '<td class="odenecek">' + odenecekTutar + ' TL</td>';
+    content += '</tr>';
 
     content += '</table>';
 
-    content += '<br>';
-
-    //  Odenecek Tutar
-    content += '<h3>Ödenecek Tutar: ' + (siteSum / 258 + blokSum / 43).toFixed(2) + ' TL</h3>';
-
-    content += '<br>';
+    content += '<br><br>';
 
     //  Dipnot
     content += '<h4>' + dipnot + '</h4>';

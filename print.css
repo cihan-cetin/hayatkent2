@@ -26,11 +26,6 @@ th, td {
     border-collapse: collapse;
 }
 
-caption{
-    margin-top: 1em;
-    font-weight: bold;
-}
-
 .page{
     height:210mm;
     width:297mm;
@@ -53,4 +48,8 @@ h3, h4{
     padding-top: .25em;
     padding-bottom: .25em;
     text-align: center;
+}
+
+.odenecek{
+    font-weight: bolder;
 }
