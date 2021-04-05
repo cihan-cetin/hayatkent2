@@ -1,4 +1,4 @@
-## Hayatkent 2 Sitesi Yazdirilabilir Aidat Makbuzu Olusturma Uygulamasi
+## Hayatkent 2 Sitesi Yazdırılabilir Aidat Makbuzu Oluşturma Uygulaması
 
 Uygulamanın web sayfasına **[buradan](https://cihan-cetin.github.io/hayatkent2 "Hayatkent 2 GitHub Pages")** ulaşabilirsiniz.
 
@@ -10,19 +10,19 @@ Uygulamanın web sayfasına **[buradan](https://cihan-cetin.github.io/hayatkent2
 
 **1. Başlangıç Tarihi:** Aidat döneminin başlangıç tarihi. Makbuzun başlık kısmında bitiş tarihi ile beraber görünecektir.
 
-> Bu alanın doldurulması zorunludur.
+  **Not:** Bu alanın doldurulması zorunludur.
 
 **2. Bitiş Tarihi:** Aidat döneminin bitiş tarihi. Makbuzun başlık kısmında başlangıç tarihi ile beraber görünecektir.
 
-> Bu alanın doldurulması zorunludur.
+  **Not:** Bu alanın doldurulması zorunludur.
 
 **3. Site Harcamaları:** Tüm site sakinlerinin(258 daire) ödeyeceği ortak giderler. Yeni gider kalemi eklemek için **```Ekle```** butonunu kullanabilirsiniz.
 
-> Bu alanın doldurulması zorunludur. Doldurulmayan satırları **```Sil```** butonu ile silebilirsiniz.
+  **Not:** Bu alanın doldurulması zorunludur. Doldurulmayan satırları **```Sil```** butonu ile silebilirsiniz.
 
 **4. Her Blok İçin Blok Harcamaları:** Blok sakinlerinin(43 daire) ödeyeceği giderler. Yeni gider kalemi eklemek için **```Ekle```** butonunu kullanabilirsiniz.
 
-> Bu alanların doldurulması zorunludur. Doldurulmayan satırları **```Sil```** butonu ile silebilirsiniz.
+  **Not:** Bu alanların doldurulması zorunludur. Doldurulmayan satırları **```Sil```** butonu ile silebilirsiniz.
 
 **5. Dipnot:** Buraya yazacaklarınız makbuzun alt kısmında not olarak görünecektir.
 
