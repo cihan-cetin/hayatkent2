@@ -24,7 +24,7 @@ Uygulamanın web sayfasına **[buradan](https://cihan-cetin.github.io/hayatkent2
 
 > Bu alanların doldurulması zorunludur. Doldurulmayan satırları **```Sil```** butonu ile silebilirsiniz.
 
-**5. Dipnot:** Buraya yazacaklarınız makbuzun alt kısmında olarak görünecektir.
+**5. Dipnot:** Buraya yazacaklarınız makbuzun alt kısmında not olarak görünecektir.
 
 
 - Tüm alanları eksiksiz ve doğru olarak doldurduğunuza eminseniz **```Yazdır```** butonuna tıklayın, bu buton sizi yazdırmaya hazır olan makbuzların bulunduğu sayfaya yönlendirecek.
