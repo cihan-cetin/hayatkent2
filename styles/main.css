@@ -1,0 +1,28 @@
+html, body{
+	background-color: lightgray;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+
+.btn-primary{
+	margin-left: 1em;
+}
+
+.row{
+	padding: 1em;
+}
+
+.container{
+	margin: 0;
+	padding-top: 2em;
+	background-color: lightgray;
+}
+
+.container-fluid{
+	background-color: lightgray;
+}
