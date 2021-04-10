@@ -43,7 +43,7 @@ function createTable(giderler, tutarlar) {
     }
 
     content += '<tr>';
-    content += '<th>Site Giderleri Toplamı</th>';
+    content += '<th style="text-align:left;">Site Giderleri Toplamı</th>';
     content += '<td>' + siteSum.toFixed(0) + ' TL</td>';
     content += '<td>' + (siteSum / 258).toFixed(2) + ' TL</td>';
     content += '</tr>';
@@ -61,7 +61,7 @@ function createTable(giderler, tutarlar) {
     }
 
     content += '<tr>';
-    content += '<th>Blok Giderleri Toplamı</th>';
+    content += '<th style="text-align:left;">Blok Giderleri Toplamı</th>';
     content += '<td>' + blokSum.toFixed(0) + ' TL</td>';
     content += '<td>' + (blokSum / 43).toFixed(2) + ' TL</td>';
     content += '</tr>';
