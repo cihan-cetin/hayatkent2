@@ -84,7 +84,7 @@ function createTable(giderler, tutarlar) {
     content += '</tr>';
 
     content += '<tr>';
-    content += '<td colspan="2">Ödenecek Tutar</td>';
+    content += '<th style="text-align:left;" colspan="2">Ödenecek Tutar</th>';
     content += '<td class="odenecek">' + odenecekTutar + ' TL</td>';
     content += '</tr>';
 

@@ -33,12 +33,14 @@
 						<label for="baslangic-tarihi" class="col-6 col-form-label"
 							data-date-format="dd/mm/yyyy">Başlangıç Tarihi</label>
 						<input type="date" class="form-control" name="baslangic_tarihi" id="baslangic-tarihi"
-							required="" oninvalid="this.setCustomValidity('Lütfen bu alanı boş bırakmayın')">
+							required="" oninvalid="this.setCustomValidity('Lütfen bu alanı boş bırakmayın')"
+							oninput="setCustomValidity('')">
 					</div>
 					<div class="col-4">
 						<label for="bitis-tarihi" class="col-4 col-form-label">Bitiş Tarihi</label>
 						<input type="date" class="form-control" name="bitis_tarihi" id="bitis-tarihi" required=""
-							oninvalid="this.setCustomValidity('Lütfen bu alanı boş bırakmayın')">
+							oninvalid="this.setCustomValidity('Lütfen bu alanı boş bırakmayın')"
+							oninput="setCustomValidity('')">
 					</div>
 				</div>
 			</div>
@@ -51,7 +53,72 @@
 					<div class="col-5">
 						<input type="text" name="site_gider[]" class="form-control m-input" placeholder="Gider"
 							autocomplete="off" required="" oninput="setCustomValidity('')"
+							oninvalid="this.setCustomValidity('Lütfen bu alanı boş bırakmayın')"
+							value="Güvenlik Görevlilerinin Aylık Ödemeleri">
+					</div>
+					<div class="col-3">
+						<input type="number" name="site_tutar[]" class="form-control m-input" placeholder="Tutar"
+							autocomplete="off" required="" oninput="setCustomValidity('')"
 							oninvalid="this.setCustomValidity('Lütfen bu alanı boş bırakmayın')">
+					</div>
+					<div class="col-1">
+						<button id="removeRow1" type="button" class="btn btn-danger">Sil</button>
+					</div>
+				</div>
+				<div id="inputFormRow1" class="row">
+					<div class="col-5">
+						<input type="text" name="site_gider[]" class="form-control m-input" placeholder="Gider"
+							autocomplete="off" required="" oninput="setCustomValidity('')"
+							oninvalid="this.setCustomValidity('Lütfen bu alanı boş bırakmayın')"
+							value="Güvenlik İnternet Faturası, Temizlik Malzemeleri">
+					</div>
+					<div class="col-3">
+						<input type="number" name="site_tutar[]" class="form-control m-input" placeholder="Tutar"
+							autocomplete="off" required="" oninput="setCustomValidity('')"
+							oninvalid="this.setCustomValidity('Lütfen bu alanı boş bırakmayın')">
+					</div>
+					<div class="col-1">
+						<button id="removeRow1" type="button" class="btn btn-danger">Sil</button>
+					</div>
+				</div>
+				<div id="inputFormRow1" class="row">
+					<div class="col-5">
+						<input type="text" name="site_gider[]" class="form-control m-input" placeholder="Gider"
+							autocomplete="off" required="" oninput="setCustomValidity('')"
+							oninvalid="this.setCustomValidity('Lütfen bu alanı boş bırakmayın')"
+							value="Güvenlik Kulübesi Su Faturası">
+					</div>
+					<div class="col-3">
+						<input type="number" name="site_tutar[]" class="form-control m-input" placeholder="Tutar"
+							autocomplete="off" required="" oninput="setCustomValidity('')"
+							oninvalid="this.setCustomValidity('Lütfen bu alanı boş bırakmayın')">
+					</div>
+					<div class="col-1">
+						<button id="removeRow1" type="button" class="btn btn-danger">Sil</button>
+					</div>
+				</div>
+				<div id="inputFormRow1" class="row">
+					<div class="col-5">
+						<input type="text" name="site_gider[]" class="form-control m-input" placeholder="Gider"
+							autocomplete="off" required="" oninput="setCustomValidity('')"
+							oninvalid="this.setCustomValidity('Lütfen bu alanı boş bırakmayın')"
+							value="Çevre Aydınlatması">
+					</div>
+					<div class="col-3">
+						<input type="number" name="site_tutar[]" class="form-control m-input" placeholder="Tutar"
+							autocomplete="off" required="" oninput="setCustomValidity('')"
+							oninvalid="this.setCustomValidity('Lütfen bu alanı boş bırakmayın')">
+					</div>
+					<div class="col-1">
+						<button id="removeRow1" type="button" class="btn btn-danger">Sil</button>
+					</div>
+				</div>
+				<div id="inputFormRow1" class="row">
+					<div class="col-5">
+						<input type="text" name="site_gider[]" class="form-control m-input" placeholder="Gider"
+							autocomplete="off" required="" oninput="setCustomValidity('')"
+							oninvalid="this.setCustomValidity('Lütfen bu alanı boş bırakmayın')"
+							value="Site Yönetim Ücreti">
 					</div>
 					<div class="col-3">
 						<input type="number" name="site_tutar[]" class="form-control m-input" placeholder="Tutar"
@@ -74,7 +141,56 @@
 					<div class="col-5">
 						<input type="text" name="a_blok_gider[]" class="form-control m-input" placeholder="Gider"
 							autocomplete="off" required="" oninput="setCustomValidity('')"
+							oninvalid="this.setCustomValidity('Lütfen bu alanı boş bırakmayın')"
+							value="Apartman Görevlisi Maaş+SSK+Kıdem Tazminatı">
+					</div>
+					<div class="col-3">
+						<input type="number" name="a_blok_tutar[]" class="form-control m-input" placeholder="Tutar"
+							autocomplete="off" required="" required="" oninput="setCustomValidity('')"
 							oninvalid="this.setCustomValidity('Lütfen bu alanı boş bırakmayın')">
+					</div>
+					<div class="col-1">
+						<button id="removeRow2" type="button" class="btn btn-danger">Sil</button>
+					</div>
+				</div>
+				<div id="inputFormRow2" class="row">
+					<div class="col-5">
+						<input type="text" name="a_blok_gider[]" class="form-control m-input" placeholder="Gider"
+							autocomplete="off" required="" oninput="setCustomValidity('')"
+							oninvalid="this.setCustomValidity('Lütfen bu alanı boş bırakmayın')"
+							value="Asansör Bakımı">
+					</div>
+					<div class="col-3">
+						<input type="number" name="a_blok_tutar[]" class="form-control m-input" placeholder="Tutar"
+							autocomplete="off" required="" required="" oninput="setCustomValidity('')"
+							oninvalid="this.setCustomValidity('Lütfen bu alanı boş bırakmayın')">
+					</div>
+					<div class="col-1">
+						<button id="removeRow2" type="button" class="btn btn-danger">Sil</button>
+					</div>
+				</div>
+				<div id="inputFormRow2" class="row">
+					<div class="col-5">
+						<input type="text" name="a_blok_gider[]" class="form-control m-input" placeholder="Gider"
+							autocomplete="off" required="" oninput="setCustomValidity('')"
+							oninvalid="this.setCustomValidity('Lütfen bu alanı boş bırakmayın')"
+							value="Elektrik Faturası">
+					</div>
+					<div class="col-3">
+						<input type="number" name="a_blok_tutar[]" class="form-control m-input" placeholder="Tutar"
+							autocomplete="off" required="" required="" oninput="setCustomValidity('')"
+							oninvalid="this.setCustomValidity('Lütfen bu alanı boş bırakmayın')">
+					</div>
+					<div class="col-1">
+						<button id="removeRow2" type="button" class="btn btn-danger">Sil</button>
+					</div>
+				</div>
+				<div id="inputFormRow2" class="row">
+					<div class="col-5">
+						<input type="text" name="a_blok_gider[]" class="form-control m-input" placeholder="Gider"
+							autocomplete="off" required="" oninput="setCustomValidity('')"
+							oninvalid="this.setCustomValidity('Lütfen bu alanı boş bırakmayın')"
+							value="Su Faturası">
 					</div>
 					<div class="col-3">
 						<input type="number" name="a_blok_tutar[]" class="form-control m-input" placeholder="Tutar"
@@ -97,7 +213,56 @@
 					<div class="col-5">
 						<input type="text" name="b_blok_gider[]" class="form-control m-input" placeholder="Gider"
 							autocomplete="off" required="" oninput="setCustomValidity('')"
+							oninvalid="this.setCustomValidity('Lütfen bu alanı boş bırakmayın')"
+							value="Apartman Görevlisi Maaş+SSK+Kıdem Tazminatı">
+					</div>
+					<div class="col-3">
+						<input type="number" name="b_blok_tutar[]" class="form-control m-input" placeholder="Tutar"
+							autocomplete="off" required="" oninput="setCustomValidity('')"
 							oninvalid="this.setCustomValidity('Lütfen bu alanı boş bırakmayın')">
+					</div>
+					<div class="col-1">
+						<button id="removeRow3" type="button" class="btn btn-danger">Sil</button>
+					</div>
+				</div>
+				<div id="inputFormRow3" class="row">
+					<div class="col-5">
+						<input type="text" name="b_blok_gider[]" class="form-control m-input" placeholder="Gider"
+							autocomplete="off" required="" oninput="setCustomValidity('')"
+							oninvalid="this.setCustomValidity('Lütfen bu alanı boş bırakmayın')"
+							value="Asansör Bakımı">
+					</div>
+					<div class="col-3">
+						<input type="number" name="b_blok_tutar[]" class="form-control m-input" placeholder="Tutar"
+							autocomplete="off" required="" oninput="setCustomValidity('')"
+							oninvalid="this.setCustomValidity('Lütfen bu alanı boş bırakmayın')">
+					</div>
+					<div class="col-1">
+						<button id="removeRow3" type="button" class="btn btn-danger">Sil</button>
+					</div>
+				</div>
+				<div id="inputFormRow3" class="row">
+					<div class="col-5">
+						<input type="text" name="b_blok_gider[]" class="form-control m-input" placeholder="Gider"
+							autocomplete="off" required="" oninput="setCustomValidity('')"
+							oninvalid="this.setCustomValidity('Lütfen bu alanı boş bırakmayın')"
+							value="Elektrik Faturası">
+					</div>
+					<div class="col-3">
+						<input type="number" name="b_blok_tutar[]" class="form-control m-input" placeholder="Tutar"
+							autocomplete="off" required="" oninput="setCustomValidity('')"
+							oninvalid="this.setCustomValidity('Lütfen bu alanı boş bırakmayın')">
+					</div>
+					<div class="col-1">
+						<button id="removeRow3" type="button" class="btn btn-danger">Sil</button>
+					</div>
+				</div>
+				<div id="inputFormRow3" class="row">
+					<div class="col-5">
+						<input type="text" name="b_blok_gider[]" class="form-control m-input" placeholder="Gider"
+							autocomplete="off" required="" oninput="setCustomValidity('')"
+							oninvalid="this.setCustomValidity('Lütfen bu alanı boş bırakmayın')"
+							value="Su Faturası">
 					</div>
 					<div class="col-3">
 						<input type="number" name="b_blok_tutar[]" class="form-control m-input" placeholder="Tutar"
@@ -120,7 +285,56 @@
 					<div class="col-5">
 						<input type="text" name="c_blok_gider[]" class="form-control m-input" placeholder="Gider"
 							autocomplete="off" required="" oninput="setCustomValidity('')"
+							oninvalid="this.setCustomValidity('Lütfen bu alanı boş bırakmayın')"
+							value="Apartman Görevlisi Maaş+SSK+Kıdem Tazminatı">
+					</div>
+					<div class="col-3">
+						<input type="number" name="c_blok_tutar[]" class="form-control m-input" placeholder="Tutar"
+							autocomplete="off" required="" oninput="setCustomValidity('')"
 							oninvalid="this.setCustomValidity('Lütfen bu alanı boş bırakmayın')">
+					</div>
+					<div class="col-1">
+						<button id="removeRow4" type="button" class="btn btn-danger">Sil</button>
+					</div>
+				</div>
+				<div id="inputFormRow4" class="row">
+					<div class="col-5">
+						<input type="text" name="c_blok_gider[]" class="form-control m-input" placeholder="Gider"
+							autocomplete="off" required="" oninput="setCustomValidity('')"
+							oninvalid="this.setCustomValidity('Lütfen bu alanı boş bırakmayın')"
+							value="Asansör Bakımı">
+					</div>
+					<div class="col-3">
+						<input type="number" name="c_blok_tutar[]" class="form-control m-input" placeholder="Tutar"
+							autocomplete="off" required="" oninput="setCustomValidity('')"
+							oninvalid="this.setCustomValidity('Lütfen bu alanı boş bırakmayın')">
+					</div>
+					<div class="col-1">
+						<button id="removeRow4" type="button" class="btn btn-danger">Sil</button>
+					</div>
+				</div>
+				<div id="inputFormRow4" class="row">
+					<div class="col-5">
+						<input type="text" name="c_blok_gider[]" class="form-control m-input" placeholder="Gider"
+							autocomplete="off" required="" oninput="setCustomValidity('')"
+							oninvalid="this.setCustomValidity('Lütfen bu alanı boş bırakmayın')"
+							value="Elektrik Faturası">
+					</div>
+					<div class="col-3">
+						<input type="number" name="c_blok_tutar[]" class="form-control m-input" placeholder="Tutar"
+							autocomplete="off" required="" oninput="setCustomValidity('')"
+							oninvalid="this.setCustomValidity('Lütfen bu alanı boş bırakmayın')">
+					</div>
+					<div class="col-1">
+						<button id="removeRow4" type="button" class="btn btn-danger">Sil</button>
+					</div>
+				</div>
+				<div id="inputFormRow4" class="row">
+					<div class="col-5">
+						<input type="text" name="c_blok_gider[]" class="form-control m-input" placeholder="Gider"
+							autocomplete="off" required="" oninput="setCustomValidity('')"
+							oninvalid="this.setCustomValidity('Lütfen bu alanı boş bırakmayın')"
+							value="Su Faturası">
 					</div>
 					<div class="col-3">
 						<input type="number" name="c_blok_tutar[]" class="form-control m-input" placeholder="Tutar"
@@ -143,7 +357,56 @@
 					<div class="col-5">
 						<input type="text" name="d_blok_gider[]" class="form-control m-input" placeholder="Gider"
 							autocomplete="off" required="" oninput="setCustomValidity('')"
+							oninvalid="this.setCustomValidity('Lütfen bu alanı boş bırakmayın')"
+							value="Apartman Görevlisi Maaş+SSK+Kıdem Tazminatı">
+					</div>
+					<div class="col-3">
+						<input type="number" name="d_blok_tutar[]" class="form-control m-input" placeholder="Tutar"
+							autocomplete="off" required="" oninput="setCustomValidity('')"
 							oninvalid="this.setCustomValidity('Lütfen bu alanı boş bırakmayın')">
+					</div>
+					<div class="col-1">
+						<button id="removeRow5" type="button" class="btn btn-danger">Sil</button>
+					</div>
+				</div>
+				<div id="inputFormRow5" class="row">
+					<div class="col-5">
+						<input type="text" name="d_blok_gider[]" class="form-control m-input" placeholder="Gider"
+							autocomplete="off" required="" oninput="setCustomValidity('')"
+							oninvalid="this.setCustomValidity('Lütfen bu alanı boş bırakmayın')"
+							value="Asansör Bakımı">
+					</div>
+					<div class="col-3">
+						<input type="number" name="d_blok_tutar[]" class="form-control m-input" placeholder="Tutar"
+							autocomplete="off" required="" oninput="setCustomValidity('')"
+							oninvalid="this.setCustomValidity('Lütfen bu alanı boş bırakmayın')">
+					</div>
+					<div class="col-1">
+						<button id="removeRow5" type="button" class="btn btn-danger">Sil</button>
+					</div>
+				</div>
+				<div id="inputFormRow5" class="row">
+					<div class="col-5">
+						<input type="text" name="d_blok_gider[]" class="form-control m-input" placeholder="Gider"
+							autocomplete="off" required="" oninput="setCustomValidity('')"
+							oninvalid="this.setCustomValidity('Lütfen bu alanı boş bırakmayın')"
+							value="Elektrik Faturası">
+					</div>
+					<div class="col-3">
+						<input type="number" name="d_blok_tutar[]" class="form-control m-input" placeholder="Tutar"
+							autocomplete="off" required="" oninput="setCustomValidity('')"
+							oninvalid="this.setCustomValidity('Lütfen bu alanı boş bırakmayın')">
+					</div>
+					<div class="col-1">
+						<button id="removeRow5" type="button" class="btn btn-danger">Sil</button>
+					</div>
+				</div>
+				<div id="inputFormRow5" class="row">
+					<div class="col-5">
+						<input type="text" name="d_blok_gider[]" class="form-control m-input" placeholder="Gider"
+							autocomplete="off" required="" oninput="setCustomValidity('')"
+							oninvalid="this.setCustomValidity('Lütfen bu alanı boş bırakmayın')"
+							value="Su Faturası">
 					</div>
 					<div class="col-3">
 						<input type="number" name="d_blok_tutar[]" class="form-control m-input" placeholder="Tutar"
@@ -166,7 +429,56 @@
 					<div class="col-5">
 						<input type="text" name="e_blok_gider[]" class="form-control m-input" placeholder="Gider"
 							autocomplete="off" required="" oninput="setCustomValidity('')"
+							oninvalid="this.setCustomValidity('Lütfen bu alanı boş bırakmayın')"
+							value="Apartman Görevlisi Maaş+SSK+Kıdem Tazminatı">
+					</div>
+					<div class="col-3">
+						<input type="number" name="e_blok_tutar[]" class="form-control m-input" placeholder="Tutar"
+							autocomplete="off" required="" oninput="setCustomValidity('')"
 							oninvalid="this.setCustomValidity('Lütfen bu alanı boş bırakmayın')">
+					</div>
+					<div class="col-1">
+						<button id="removeRow6" type="button" class="btn btn-danger">Sil</button>
+					</div>
+				</div>
+				<div id="inputFormRow6" class="row">
+					<div class="col-5">
+						<input type="text" name="e_blok_gider[]" class="form-control m-input" placeholder="Gider"
+							autocomplete="off" required="" oninput="setCustomValidity('')"
+							oninvalid="this.setCustomValidity('Lütfen bu alanı boş bırakmayın')"
+							value="Asansör Bakımı">
+					</div>
+					<div class="col-3">
+						<input type="number" name="e_blok_tutar[]" class="form-control m-input" placeholder="Tutar"
+							autocomplete="off" required="" oninput="setCustomValidity('')"
+							oninvalid="this.setCustomValidity('Lütfen bu alanı boş bırakmayın')">
+					</div>
+					<div class="col-1">
+						<button id="removeRow6" type="button" class="btn btn-danger">Sil</button>
+					</div>
+				</div>
+				<div id="inputFormRow6" class="row">
+					<div class="col-5">
+						<input type="text" name="e_blok_gider[]" class="form-control m-input" placeholder="Gider"
+							autocomplete="off" required="" oninput="setCustomValidity('')"
+							oninvalid="this.setCustomValidity('Lütfen bu alanı boş bırakmayın')"
+							value="Elektrik Faturası">
+					</div>
+					<div class="col-3">
+						<input type="number" name="e_blok_tutar[]" class="form-control m-input" placeholder="Tutar"
+							autocomplete="off" required="" oninput="setCustomValidity('')"
+							oninvalid="this.setCustomValidity('Lütfen bu alanı boş bırakmayın')">
+					</div>
+					<div class="col-1">
+						<button id="removeRow6" type="button" class="btn btn-danger">Sil</button>
+					</div>
+				</div>
+				<div id="inputFormRow6" class="row">
+					<div class="col-5">
+						<input type="text" name="e_blok_gider[]" class="form-control m-input" placeholder="Gider"
+							autocomplete="off" required="" oninput="setCustomValidity('')"
+							oninvalid="this.setCustomValidity('Lütfen bu alanı boş bırakmayın')"
+							value="Su Faturası">
 					</div>
 					<div class="col-3">
 						<input type="number" name="e_blok_tutar[]" class="form-control m-input" placeholder="Tutar"
@@ -189,7 +501,56 @@
 					<div class="col-5">
 						<input type="text" name="f_blok_gider[]" class="form-control m-input" placeholder="Gider"
 							autocomplete="off" required="" oninput="setCustomValidity('')"
+							oninvalid="this.setCustomValidity('Lütfen bu alanı boş bırakmayın')"
+							value="Apartman Görevlisi Maaş+SSK+Kıdem Tazminatı">
+					</div>
+					<div class="col-3">
+						<input type="number" name="f_blok_tutar[]" class="form-control m-input" placeholder="Tutar"
+							autocomplete="off" required="" oninput="setCustomValidity('')"
 							oninvalid="this.setCustomValidity('Lütfen bu alanı boş bırakmayın')">
+					</div>
+					<div class="col-1">
+						<button id="removeRow7" type="button" class="btn btn-danger">Sil</button>
+					</div>
+				</div>
+				<div id="inputFormRow7" class="row">
+					<div class="col-5">
+						<input type="text" name="f_blok_gider[]" class="form-control m-input" placeholder="Gider"
+							autocomplete="off" required="" oninput="setCustomValidity('')"
+							oninvalid="this.setCustomValidity('Lütfen bu alanı boş bırakmayın')"
+							value="Asansör Bakımı">
+					</div>
+					<div class="col-3">
+						<input type="number" name="f_blok_tutar[]" class="form-control m-input" placeholder="Tutar"
+							autocomplete="off" required="" oninput="setCustomValidity('')"
+							oninvalid="this.setCustomValidity('Lütfen bu alanı boş bırakmayın')">
+					</div>
+					<div class="col-1">
+						<button id="removeRow7" type="button" class="btn btn-danger">Sil</button>
+					</div>
+				</div>
+				<div id="inputFormRow7" class="row">
+					<div class="col-5">
+						<input type="text" name="f_blok_gider[]" class="form-control m-input" placeholder="Gider"
+							autocomplete="off" required="" oninput="setCustomValidity('')"
+							oninvalid="this.setCustomValidity('Lütfen bu alanı boş bırakmayın')"
+							value="Elektrik Faturası">
+					</div>
+					<div class="col-3">
+						<input type="number" name="f_blok_tutar[]" class="form-control m-input" placeholder="Tutar"
+							autocomplete="off" required="" oninput="setCustomValidity('')"
+							oninvalid="this.setCustomValidity('Lütfen bu alanı boş bırakmayın')">
+					</div>
+					<div class="col-1">
+						<button id="removeRow7" type="button" class="btn btn-danger">Sil</button>
+					</div>
+				</div>
+				<div id="inputFormRow7" class="row">
+					<div class="col-5">
+						<input type="text" name="f_blok_gider[]" class="form-control m-input" placeholder="Gider"
+							autocomplete="off" required="" oninput="setCustomValidity('')"
+							oninvalid="this.setCustomValidity('Lütfen bu alanı boş bırakmayın')"
+							value="Su Faturası">
 					</div>
 					<div class="col-3">
 						<input type="number" name="f_blok_tutar[]" class="form-control m-input" placeholder="Tutar"
